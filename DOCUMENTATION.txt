@@ -128,4 +128,7 @@ y = Sub(x, 3)
 z = Add(Sqrt(x), Pow(y, 2))
 
 Wait(0.5)
+
 PrintLn(z)
+WARNING!
+AFTER THE INSTALLATION,GO TO WIN+R,CMD AND FOR START WRITE mather OR mather --
