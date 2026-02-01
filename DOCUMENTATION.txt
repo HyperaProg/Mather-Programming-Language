@@ -1,0 +1,131 @@
+MATHER LANGUAGE — STANDARD FUNCTIONS & SYNTAX
+===========================================
+
+DATA TYPES
+----------
+Number
+Vec2
+Vec3
+
+
+1. ARITHMETIC FUNCTIONS
+----------------------
+Add(a, b) // a + b
+Sub(a, b) // a - b
+Mul(a, b) // a * b
+Div(a, b) // a / b
+Mod(a, b) // a % b
+Pow(a, b) // a ^ b
+
+
+2. ALGEBRA & NUMBERS
+-------------------
+Abs(x) // |x|
+Sign(x) // -1, 0, 1
+Inv(x) // 1 / x
+
+Sqrt(x) // square root
+Cbrt(x) // cube root
+Root(x, n) // n-th root
+
+
+3. TRIGONOMETRY (RADIANS)
+------------------------
+Sin(x)
+Cos(x)
+Tan(x)
+Cot(x)
+
+Asin(x)
+Acos(x)
+Atan(x)
+Atan2(y, x)
+
+
+4. LOGARITHMS & EXPONENTIALS
+---------------------------
+Ln(x) // natural logarithm
+Log10(x) // base-10 logarithm
+Log(x, b) // logarithm with base b
+
+Exp(x) // e^x
+
+
+5. STATISTICS & ANALYSIS
+-----------------------
+Min(a, b, ...)
+Max(a, b, ...)
+Sum(a, b, ...)
+Avg(a, b, ...)
+Clamp(x, min, max)
+
+
+6. VECTOR MATH
+--------------
+Vec2(x, y)
+Vec3(x, y, z)
+
+Len(v) // vector length
+Norm(v) // normalized vector
+Dot(a, b) // dot product
+Cross(a, b) // cross product (Vec3 only)
+
+
+7. TIME & EXECUTION
+------------------
+Time() // system time (seconds)
+Clock() // time since program start
+
+Wait(t)
+Sleep(t) // alias of Wait
+
+Supports ultra-small values:
+Wait(0.000000000000000000001)
+
+
+8. VARIABLES & STATE
+-------------------
+Let(name, value)
+Set(name, value)
+Get(name)
+
+Short syntax:
+x = 10
+x = 20
+
+
+9. INPUT / OUTPUT
+-----------------
+Print(x)
+PrintLn(x)
+
+
+10. SYSTEM & UTILITY
+-------------------
+Precision(n)
+Epsilon()
+
+IsNaN(x) // returns 1 or 0
+IsInf(x) // returns 1 or 0
+
+Exit()
+
+
+CONSTANTS
+---------
+PI // π
+E // Euler's number
+G // gravitational constant
+C // speed of light
+AU // astronomical unit
+
+
+SYNTAX EXAMPLES
+---------------
+x = 10
+y = Sub(x, 3)
+
+z = Add(Sqrt(x), Pow(y, 2))
+
+Wait(0.5)
+PrintLn(z)
